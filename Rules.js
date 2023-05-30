@@ -1,11 +1,11 @@
 export class Rules {
-    constructor(choices, table) {
-        this.choices = choices;
+    constructor(moves, table) {
+        this.moves = moves;
         this.table = table;
     }
 
-    getWinner(userChoice, computerChoice) {
-        let result = this.table[this.choices.indexOf(userChoice)][this.choices.indexOf(computerChoice)];
+    getWinner(userMove, computerMove) {
+        let result = this.table[this.moves.indexOf(userMove)][this.moves.indexOf(computerMove)];
         if(result === 'Win') {
             return 'User wins!';
         } else if(result === 'Lose') {
