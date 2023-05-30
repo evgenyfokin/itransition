@@ -24,10 +24,3 @@ export class KeyAndHmacGenerator {
         return calculateHmac === supposedHmac
     }
 }
-
-// let key = Buffer.from('fab221a4e24a88026ff4b6571ad9c71bf6b4670afbe40bafd0e5367b657f0153', 'hex');
-// let message = 'Scissors';
-//
-// let hmac = crypto.createHmac('sha256', key);
-// hmac.update(message);
-// let hmacResult = hmac.digest('hex');
